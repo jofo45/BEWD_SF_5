@@ -11,22 +11,47 @@
 
 
 #Version 1 - Welcome the user to Teddit, print the first story to the terminal.
-###########
-###########
-#
-#'Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!'
-#'Story: Man raised by wolverines, then eaten Current upvotes: 4'
+#puts""
+#puts"Version 1"
+#puts""
+#puts 'Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow!'
+#puts 'Story: Man raised by wolverines, then eaten Current upvotes: 4'
 
 
 #Version 2 - Replace the story title and upvotes with variables.
-###########
-###########
+puts""
+puts"Version 2"
+puts""
+story = "cat makes fortune by showing elderly to play dice."
+upvotes = 7
 
+puts "Story: " + story + " Current upvotes: " + upvotes.to_s
+
+puts "Story: #{story.capitalize} \nCurrent upvotes: \t#{upvotes.to_s}"
+
+
+
+def put_welcome
+	puts "Welcome to Teddit! a text based news aggregator. Get today\'s news tomorrow"
+end
+
+def headline
+	"cat makes fortune by showing elderly to play dice."
+end
+
+
+def story_stats(story, upvotes)
+	"Story: #{story.capitalize} \nCurrent upvotes: #{upvotes.to_s}."
+end
+
+put_welcome
+puts story_stats(headline, 4)
+puts story_stats("yo", 4)
 
 
 #Version 3 - Add data type casting (fix casting issue).
-###########
-###########
+
+
 
 
 

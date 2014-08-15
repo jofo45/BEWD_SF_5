@@ -18,3 +18,28 @@
 # Show BANG Methods #sort!, #uniq!, #shuffle!, reverse! 
 # Show join, to_s
 # Show split from string
+
+puts ""
+
+rocks = ["rock0", "rock1", "rock2"]
+puts rocks
+puts rocks.class
+puts""
+instructors = ["Brian", "Bryan", "Keesha"]
+puts instructors
+puts "instructors.count #{instructors.count}"
+puts "instructors.size #{instructors.size}"
+puts "instructors.length #{instructors.length}"
+puts "instructors.clear #{instructors.clear}"
+
+instructors << "John"
+instructors << "John"
+
+print instructors
+puts ""
+puts instructors.join(",,,,, ")
+
+puts""
+
+
+

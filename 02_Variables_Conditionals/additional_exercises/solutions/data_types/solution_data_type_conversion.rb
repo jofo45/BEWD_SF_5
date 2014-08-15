@@ -16,25 +16,29 @@
 #    parallel assignment so that a is 5, b is 7 and c is 9.
 
 a, b, c = 5, 7, 9
+puts ""
 
 # 2. Print the result of 'a' divided by 'b'.
 
 puts a / b
 
+puts""
+
 # 3. Overwrite variable b and convert the original value of 'b' to a float
 # number.
 
 b = b.to_f
+puts""
 
 # 3. Write the same expression again from #2.
 
 puts a / b
+puts""
 
 # 4. What do you notice?
 #
-# Because we used the method .to_f, b is now a Float instead of an
-# Integer. When we divide by a Float, we get a Floating number as
-# a result.
+prints" Because we used the method .to_f, b is now a Float instead of an Integer. When we divide by a Float, we get a Floating number as a result."
+
 
 # 5. Declare a new variable called `name` and assign it a String of your
 #    first name.

@@ -15,3 +15,97 @@
 # Once the user is finished with entering their stories, use .each to print each story in the stories array. 
 #
 #
+
+# Teddit Contionals - Starter Code.
+
+# Let's add a new Teddit feature. Upvotes!
+# Complete the application below. 
+# Where you see comments (lines that begin with #) replace it with code so that the program works.
+
+
+
+	# Write code so that:
+		# If the Story is about cats multiply the upvotes by 5
+		# If the Story is about bacon multiply the upvotes by 8
+		# If the Story is about Food it gets 3 times the upvotes.
+
+	#For example:
+	# "Cats frolic despite tuna shortage" should give you 5 times the upvotes!
+
+
+stories = Array.new
+
+def get_input
+  gets.chomp
+  #Get input from the user.
+end
+
+def calculate_upvotes(story, category)
+	x=1
+	if category.downcase == "cats"
+		x*5
+	elsif category.downcase == "bacon"
+		x*8
+	elsif category.downcase == "food"
+		x*3
+	else 
+		x
+    end
+
+end
+
+
+
+
+def obtain_story
+	
+	
+	puts "Please enter a News story:"
+	story = get_input
+	puts ""
+	puts "Please give it a category:"
+	category = get_input
+	puts ""
+	upvotes = calculate_upvotes(story, category)
+	#stories.push({title: story, category: category, upvotes: upvotes})
+
+
+	stories.each do |entry|
+		#puts entry
+		puts "New story added! #{entry[:title]} Category: #{entry[:category]}, Current Upvotes: #{entry[:upvotes]}"
+	end
+		ask
+end
+
+def ask
+	
+
+	puts "Would you like to add another story? Enter 'y' or 'n'"
+	another_story_response = get_input	
+
+	if another_story_response == "n"
+
+		puts "Thank you for using my program."
+	elsif another_story_response == "y"
+		obtain_story
+	else
+
+		puts "give me y or n"
+
+	end
+
+end
+
+
+
+
+
+
+
+puts ""
+puts "Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!"
+puts ""
+
+obtain_story
+
+
